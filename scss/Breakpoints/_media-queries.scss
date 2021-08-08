@@ -1,0 +1,60 @@
+/*HEADER*/
+
+@media (max-width: 950px) {
+  .logo,
+  .phone-number {
+    font-size: 1rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-content {
+    width: 50%;
+    height: 70%;
+  }
+
+  .logo,
+  .phone-number {
+    width: 40%;
+  }
+}
+
+/*HEIGHT*/
+
+@media (max-height: 500px) {
+  .main-content {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row;
+    flex-flow: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    .container {
+      height: 75%;
+    }
+    .title {
+      width: 50%;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+    }
+
+    .booking,
+    .main_card_menu {
+      display: none;
+    }
+  }
+}
+
+@media (max-height: 280px) {
+  .title {
+    display: none;
+  }
+}

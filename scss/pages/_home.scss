@@ -1,0 +1,25 @@
+@forward '../base/reset';
+
+@forward '../utils/animations';
+
+@use '../themes/typography' as t;
+
+.container {
+  top: 0.3rem;
+  width: 80%;
+  height: 70%;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: t.$main-font;
+  -webkit-animation: show-up 800ms ease-in forwards;
+  animation: show-up 800ms ease-in forwards;
+}
