@@ -132,6 +132,9 @@ nav.navbar li a:link,
 nav.navbar li a:visited {
   text-decoration: none;
 }
+nav.navbar li a:hover {
+  opacity: 0.7;
+}
 nav.navbar .home {
   background-color: #f7f6ee;
 }
